@@ -1,15 +1,21 @@
+"use client";
 import Image from "next/image";
 import Navbar from "@/Components/Navbar/Navbar";
 import Homepage from "@/Components/Homepage/Homepage";
 import Cards from "@/Components/Cards/Cards";
 import Finance from "@/Components/Finance/Finance";
+import { useFlagsmith } from "flagsmith/react";
 
 export default function Home() {
+    const flagsmith = useFlagsmith();
+
+
+  const showCard = flagsmith.hasFeature("card-page-feature");
   return (
     <div>
       <Navbar />
       <Homepage />
-      <Cards />
+      {showCard &&<Cards />}
       <Finance />
     </div>
   );

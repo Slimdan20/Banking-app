@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "flagsmith": "^9.3.2",
+    "next": "15.5.3",
+    "prom-client": "^15.1.3",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.3"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
