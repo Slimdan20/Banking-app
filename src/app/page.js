@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Homepage />
-      <Cards />
+     {/* <Cards /> */ }
       <Finance />
     </div>
   );
