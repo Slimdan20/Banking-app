@@ -21,7 +21,6 @@ const Cards = () => {
         headers: { "Content-Type": "application/json" },
       });
     } catch (err: unknown) {
-      // It's good practice to log the error for debugging
       console.error("Error during order click:", err);
       await fetch("/api/metrics", {
         method: "POST",

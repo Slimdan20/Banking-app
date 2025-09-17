@@ -15,7 +15,7 @@ export default function FlagsmithWrapper({ children }: { children: ReactNode }) 
       .then(() => setReady(true))
       .catch((err) => {
         console.error("Flagsmith initialization failed:", err);
-        setReady(true); // Still allow the app to render
+        setReady(true);
       });
   }, []);
 

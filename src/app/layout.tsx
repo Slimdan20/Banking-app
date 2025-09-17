@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import FlagsmithWrapper from "./Providers/FlagsmithWrapper";
+import FlagsmithWrapper from "./Providers/FlagsmithWrapper"; // import the FlagsmithWrapper component created earlier
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -30,7 +30,7 @@ export default function RootLayout({ children,
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <FlagsmithWrapper>
+        <FlagsmithWrapper> {/* Wrap all child components with Flagsmith provieder */}
           {children}
         </FlagsmithWrapper>
       </body>
