@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Finance = () => {
   return (
-    <div id='eazy' className='bg-gray-200 py-10 scroll-mt-14 '>
+    <div id='eazy' className='py-10 scroll-mt-14 '>
         <div className='mx-36 py-10'>
              <h1 className='text-2xl font-bold'>eaZyLinks</h1>
 
